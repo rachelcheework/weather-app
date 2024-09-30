@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(157, 226, 255);
+    color: rgb(14, 14, 14);
+}
+.container {
+    display: flex;
+    flex-direction: column; /* stacks search bar on top of weather data */
+    height: 100vh;
+    align-items: center; /* centers horizontally */
+    justify-content: center; /* centers vertically */
+    text-align: center; /* centers the text */
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.searchBar input {
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    height: 30px;
+    width: 300px;
+    border: 0px;
+    /* border: 1px solid #ffffff;  */
+    border-radius: 3px;
+    padding-left: 10px;
+    font-size: large;
+    color: rgb(0, 130, 186);
+    outline: none; /* removing the default blue */
+}
+
+.searchBar input:focus {
+    box-shadow: 0 0 5px rgb(0, 130, 186);
+    /* border-color: rgb(18, 103, 140); */
+}
+
+.searchBar button {
+    background-color: rgb(255, 255, 255);
+    height: 32px;
+    border-radius: 3px;
+    border: 0px;
+    font-size: large;
+    color: rgb(0, 130, 186);
+}
+
+.searchBar button:hover {
+    color: rgb(255, 255, 255);
+    border: 0px;
+    background-color: rgb(0, 130, 186);
+    box-shadow: 5px 5px 3px rgb(57, 57, 57);
+    transition: all 0.3s ease; 
+}
