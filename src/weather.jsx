@@ -22,7 +22,7 @@ const Weather = () => {
           setWeatherData(null);
           if (error.response && error.response.status === 404) {
             setErrorMessage("City not found. Please check your input and try again.");
-            console.log("City not found. Please check your input and try again.", error);
+            console.log("City not found! Please check your input and try again.", error);
           }
           else {
             setErrorMessage("An error occurred while fetching weather data.");
