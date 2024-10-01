@@ -5,7 +5,7 @@ import Weather from './weather';
 
 function App() {
   return (
-   <Router basename='/weather-app'>
+   <Router>
       <Routes>
         <Route path="/" exact element={<Weather/>}/>
       </Routes>
