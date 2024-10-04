@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(157, 226, 255);
+    background-image: url(../public/weather-app-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;  /* background image doesn't scroll with page */
+    background-size: cover;  /* background image covers the whole page */
     color: rgb(14, 14, 14);
 }
 .container {
@@ -7,12 +10,16 @@ body {
     flex-direction: column; /* stacks search bar on top of weather data */
     height: 100vh;
     align-items: center; /* centers horizontally */
-    justify-content: center; /* centers vertically */
     text-align: center; /* centers the text */
 }
 
+p {
+    font-weight: 600;
+}
+
 .header {
-    margin-bottom: 20px;
+    margin-top: 3%;
+    margin-bottom: 10px;
 }
 
 .searchBar input {
@@ -21,17 +28,14 @@ body {
     height: 30px;
     width: 300px;
     border: 0px;
-    /* border: 1px solid #ffffff;  */
     border-radius: 3px;
     padding-left: 10px;
     font-size: large;
-    color: rgb(0, 130, 186);
     outline: none; /* removing the default blue */
 }
 
 .searchBar input:focus {
     box-shadow: 0 0 5px rgb(0, 130, 186);
-    /* border-color: rgb(18, 103, 140); */
 }
 
 .searchBar button {
@@ -40,7 +44,7 @@ body {
     border-radius: 3px;
     border: 0px;
     font-size: large;
-    color: rgb(0, 130, 186);
+    /* color: rgb(0, 130, 186); */
 }
 
 .searchBar button:hover {
@@ -49,4 +53,12 @@ body {
     background-color: rgb(0, 130, 186);
     box-shadow: 5px 5px 3px rgb(57, 57, 57);
     transition: all 0.3s ease; 
+}
+
+.weather-details {
+    margin-top: 20px;
+    width: 30%;
+    min-height: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
 }
